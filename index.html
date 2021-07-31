@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Magdeline Tshepiso Rebatenne</title>
+
+    <!-- Image wrapper mo paragraph and toggle icon-->
+    <style>
+        .wrapingimage {
+            float: right;
+        }
+
+        /*singles local*/
+        #tournamentToggle {
+            /* width: 200%; */
+            /* padding: 50px 0; */
+            text-align: left;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+        /*singles international*/
+        #internationalTournamentToggle {
+            /* width: 200%; */
+            /* padding: 50px 0; */
+            text-align: left;
+            background-color: white;
+            margin-top: 20px;
+        }
+    </style>
+
+    <style>
+        .switch {
+            position: relative;
+            display: block;
+            /* vertical-align: top; */
+            width: 100px;
+            height: 30px;
+            padding: 3px;
+            margin: 0 10px 10px 0;
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+            background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+            border-radius: 18px;
+            box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            box-sizing: content-box;
+        }
+
+        .switch-input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            box-sizing: content-box;
+        }
+
+        .switch-label {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #eceeef;
+            border-radius: inherit;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+            box-sizing: content-box;
+        }
+
+        .switch-label:before, .switch-label:after {
+            position: absolute;
+            top: 50%;
+            margin-top: -.5em;
+            line-height: 1;
+            -webkit-transition: inherit;
+            -moz-transition: inherit;
+            -o-transition: inherit;
+            transition: inherit;
+            box-sizing: content-box;
+        }
+
+        .switch-label:before {
+            content: attr(data-off);
+            right: 11px;
+            color: #aaaaaa;
+            text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        }
+
+        .switch-label:after {
+            content: attr(data-on);
+            left: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+        }
+
+        .switch-input:checked ~ .switch-label {
+            background: hsl(135, 75%, 53%);
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .switch-input:checked ~ .switch-label:before {
+            opacity: 0;
+        }
+
+        .switch-input:checked ~ .switch-label:after {
+            opacity: 1;
+        }
+
+        .switch-handle {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+            background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .switch-handle:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -6px 0 0 -6px;
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+            background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+            border-radius: 6px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+        }
+
+        .switch-input:checked ~ .switch-handle {
+            left: 74px;
+            box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Transition
+        ========================== */
+        .switch-label, .switch-handle {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease;
+        }
+    </style>
+
+    <!-- Controlling hyperlinks -->
+    <style>
+        /* a.fv:link {color:#30099c;} */
+        a.mylinks:visited {
+            color: #ff0022;
+        }
+
+        a.mylinks:hover {
+            color: #ffc400e0;
+        }
+    </style>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/topspin.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Country Flags icons-->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css" rel="stylesheet"/>
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body oncontextmenu="return false">
+<!--local tournaments singles toggle JS-->
+<script>
+    function tournamentSuccesses() {
+        var x = document.getElementById("tournamentToggle");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+<!--international tournaments doubles toggle JS-->
+<script>
+    function tournamentSuccessesTeamEvents() {
+        var x = document.getElementById("internationalTournamentToggle");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+<!--local tournaments doubles toggle JS-->
+<script>
+    function tournamentSuccessesLocalDoubles() {
+        var x = document.getElementById("internationalTournamentsDoublesToggle");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+
+
+<!-- ======= Mobile phones toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+
+        <div class="profile">
+            <img src="assets/img/top-profile.jpg" alt="" class="img-fluid rounded-circle">
+            <h1 class="text-light"><a href="index.html">Tshepiso Rebatenne</a></h1>
+            <div class="social-links mt-3 text-center">
+                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                <a href="https://en.wikipedia.org/wiki/Botswana" rel="tooltip" title="BW" target="_blank"><i
+                        class="flag-icon flag-icon-bw"></i></a>
+
+            </div>
+        </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i>
+                    <span>Home</span></a>
+                </li>
+                <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+                </li>
+                <li><a href="#facts" class="nav-link scrollto"><i class="bx bx-award"></i>
+                    <span>Achievements</span></a>
+                </li>
+                <!-- <li><a href="#resume" class="nav-link scrollto"><i
+                    class="bx bx-globe"></i><span>Medal record</span></a></li> -->
+
+                <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                    <span>Gallery</span></a></li>
+                <li><a href="#sources" class="nav-link scrollto"><i class="bx bx-link"></i>
+                    <span>Articles</span></a></li>
+                <!--          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>-->
+            </ul>
+        </nav><!-- .nav-menu -->
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+        <h1>Tshepiso Rebatenne</h1>
+        <p><i>I'm a <span class="typed" data-typed-items=" table tennis player..."></span></i></p>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <a href="https://www.youtube.com/watch?v=ouudRO7fmus" class="glightbox btn-watch-video" target="_blank"><i
+                class="bi bi-play-circle"></i><span style="color: #b6effb; font-size: medium"> Watch Interviews
+                </span></a>
+
+    </div>
+    <!-- <div class="wrapingimage"> <img src="assets/img/tournament-promo.png" class="img-fluid" alt="image" height="200" width="200"></div> -->
+
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About</h2>
+                <p align="justify">
+                    Magdeline Tshepiso Rebatenne started playing table tennis back in 2000 at Letlole Mosielele school
+                    in <a class="mylinks" href="https://en.wikipedia.org/wiki/Thamaga" target="_blank">Thamaga </a> when
+                    she was doing
+                    form 1. Her first introduction to table tennis was through her English teacher, and that is when her
+                    love for sport started.
+
+                    In the same year she was selected to be part of the table tennis school team and she managed to
+                    reach the nationals and she was the only player who qualified for that stage.</p>
+                <br>
+                <p align="justify">
+                    Her love for table tennis continued as she played for senior school team though she did not win any
+                    trophies during the 3 years she was playing for senior category but she did not give up on the
+                    sport. After she finishes her studies at senior secondary school she had to join outside clubs to
+                    keep fit, and from 2005 she did not have game time until she resumed playing table tennis again in
+                    2008 when she was playing her first Open table tennis tournament in <a class="mylinks"
+                                                                                           href="https://en.wikipedia.org/wiki/Orapa"
+                                                                                           target="_blank">Orapa.</a>
+                    She later went to university where she was selected to play
+                    for
+                    <a class="mylinks" href="https://www.bothouniversity.com/"> Botho University </a> table tennis team,
+                    where she won her first table tennis medal, and she was
+                    awarded the best graduating sports person in 2012 when she was graduating.
+
+                    <!--                    She-->
+                    <!--                    joined the <a class="mylinks" href="https://www.gov.bw/ministries/botswana-defence-force"-->
+                    <!--                                  target="_blank">-->
+                    <!--                    Botswana Defence Force </a> table tennis team, and later on signed by Nhabe Table Tennis-->
+                    <!--                    Club and still plays for the club to date.-->
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" data-aos="fade-right">
+                    <img src="assets/img/rebatenne-profile.jpg" class="img-fluid" alt="">
+                    <ficaption>
+                        <p align="justify">
+                            <h9>Tshepiso with Botswana national team at the 2015 African Games (Brazaville, Congo). <a
+                                    class="mylinks"
+                                    href="https://www.flickr.com/photos/134021509@N07/albums/72157658356137239"
+                                    target="_blank"><i>View full gallery</i></a></h9>
+                        </p>
+                    </ficaption>
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                    <h3>Personal Information</h3>
+                    <!--            <p class="fst-italic">-->
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Full names:</strong> <span>Magdeline Tshepiso Rebatenne</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Date of birth:</strong> <span>27
+                                            January 1987</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Place of birth:</strong>
+                                    <span><a  class="mylinks" href="https://en.wikipedia.org/wiki/Molepolole" target="_blank">Molepolole</a></span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Nationality:</strong> <span><a
+                                        class="mylinks"
+                                        href="https://en.wikipedia.org/wiki/Botswana"
+                                        target="_blank"><span class="flag-icon flag-icon-bw"></span> Motswana</a></span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Current ranking:</strong> <span>1
+                                            (April 2021)</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Previous sponsors:</strong>
+                                    <span>CELIAT Construction and Plant Hire, JOOLA</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Height:</strong> <span>163cm (5 ft
+                                            3 inc)</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Club:</strong> <span>Nhabe Table
+                                            Tennis Club</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Playing style:</strong> <span>Right
+                                            handed, <a class="mylinks"
+                                                       href="https://en.wikipedia.org/wiki/Table_tennis_styles"
+                                                       target="_blank">shakehand grip</a></span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Highest ranking:</strong><span> 1 <a
+                                        class="mylinks"
+                                        href="https://en.wikipedia.org/wiki/Botswana"
+                                        target="_blank">(Botswana)</a>, 14 <a class="mylinks"
+                                                                              href="https://tabletennis.guide/alldata.php?name=tshepiso-rebatenne-123707"
+                                                                              target="_blank"> (ITTF Africa)</a> (as of May 2018)</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Current sponsors:</strong>
+                                    <span>N/A, looking for sponsors</span>
+                                </li>
+                                <!--                                <li><i class="bi bi-chevron-right"></i> <strong>Equiptment(s):</strong> <span><p-->
+                                <!--                                        align="justify">Stiga Dynasty Carbon, TG2 Skyline Blue (FH, black), DHS NEO Hurricane 3 custom sponge (BH, red)</p></span>-->
+                                <!--                                </li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--                <p align="justify">-->
+                <!--                    Magdeline's lack of-->
+                <!--                    <br>-->
+                <!--                    Tshepiso started playing for <a class="mylinks"-->
+                <!--                                                    href="https://www.gov.bw/ministries/botswana-defence-force"-->
+                <!--                                                    target="_blank"> Botswana Defence Force </a> (BDF) in 2008-->
+                <!--                    and she won about 15 medals in all competitions held locally and abroad in all categories, i.e.-->
+                <!--                    women singles, mixed doubles and doubles. She later joined Nhabe table-->
+                <!--                    tennis club from 2013 until today.-->
+                <!--                </p>-->
+            </div>
+
+            <br>
+            <h5><b><u>Club Career</u></b></h5>
+            <div class="wrapingimage">
+                <img src="assets/img/career-photo-1.png" class="img-fluid" alt="" height="200" width="200"
+                     alt="image">
+                <ficaption>
+                    <p align="justify" style="color:blue;font-size:11px;">
+                        Tshepiso in action, bottom left corner
+                    </p>
+                </ficaption>
+            </div>
+            <p align="justify">
+                Magdline's lack of game time at and fitness level was worrisome as most of the local table tennis clubs
+                did not want to sign her as their player. She later met <a  class="mylinks" href="https://en.wikipedia.org/wiki/Molepolole" target="_blank">Molepolole </a> originated players and decided to
+                form their own club, even though the idea was good but the club formation did not materialize. She
+                started her regular training at the University of Botswana where she met players of high caliber that
+                helped her improve her skills.
+            </p>
+            <br>
+            <p align="justify">
+                During her training at the University of Botswana, Magdeline finally found a mentor who helped her with
+                training plans. She started participating in open tournaments locally and <a class="mylinks"
+                                                                                             href="https://www.gov.bw/ministries/botswana-defence-force"
+                                                                                             target="_blank"> Botswana
+                Defence Force </a> (BDF) signed her as their female table tennis player. She played for <a
+                    class="mylinks"
+                    href="https://www.gov.bw/ministries/botswana-defence-force"
+                    target="_blank"> Botswana Defence Force </a> for 4 years. During her stay at BDF she rose to fame
+                and reached her performance peak and she started challenging for championship in the ladies category on
+                every tournament locally and in the Southern Africa himisphere. After 4 years she joined BDF rivals
+                Nhabe table tennis club in 2015 where she is still playing at to date.
+            </p>
+
+            <div>
+                <br>
+                <h5><b><u>International Career</u></b></h5>
+                <p>
+                    <h9><i>See Also:</i></h9>
+                    <a class="mylinks" href="http://www.dailynews.gov.bw/news-details.php?nid=57397" target="_blank"><i>
+                        BTAA
+                        national team
+                        selection</i></a>
+                </p>
+                <p align="justify">
+                    Tshepiso was part of the <a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                                target="_blank">Botswana</a> table tennis national team that qualified
+                    in the <a class="mylinks"
+                              href="https://en.wikipedia.org/wiki/2014_World_Team_Table_Tennis_Championships"
+                              target="_blank">World Team Table Tennis Championships</a>
+                    that were held in <a class="mylinks" href="https://en.wikipedia.org/wiki/Japan" target="_blank">Tokyo,
+                    Japan</a> in 2014. She made history by being part of the
+                    team that competed in the WTTC since it was the first time <a class="mylinks"
+                                                                                  href="https://en.wikipedia.org/wiki/Botswana"
+                                                                                  target="_blank">Botswana</a> took part
+                    in the competion.
+                </p>
+                <p align="justify">
+                    In 2014 Tshepiso Rebatenne was part of the team that qualified for the <a class="mylinks"
+                                                                                              href="https://en.wikipedia.org/wiki/Table_tennis_at_the_2014_Commonwealth_Games_%E2%80%93_Women%27s_singles"
+                                                                                              target="_blank">
+                    Commonwealth Games held in Glasgow, Scotland in 2014</a>, before Commonwealth Games Tshepiso and her
+                    team recieved blessings by meeting and having lunch with <a class="mylinks"
+                                                                                href="https://www.royal.uk/her-majesty-the-queen"
+                                                                                target="_blank">Queen Elizabeth II </a>of
+                    the
+                    <a class="mylinks" href="https://en.wikipedia.org/wiki/United_Kingdom" target="_blank">United
+                        Kingdom</a> in July 2014 as well as a launch meeting by the former president of the Republic Of
+                    Botswana, <a class="mylinks" href="https://en.wikipedia.org/wiki/Ian_Khama" target="_blank">Lieutenant
+                    General Seretse Khama Ian Khama</a>.
+
+                </p>
+                <P align="justify">
+                    The year 2014 was full of events for the Botswana star, she won a bronze medal with the Botswana
+                    table tennis national
+                    team at the Zone VI Regional Table Tennis Championships in <a class="mylinks"
+                                                                                  href="https://en.wikipedia.org/wiki/Lusaka"
+                                                                                  target="_blank">Zambia, Lusaka</a> in
+                    2014.
+                </P>
+            </div>
+        </div>
+    </section>
+
+    <section id="facts" class="facts">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Facts/Achievements</h2>
+                <p align="justify">Achievements by appearances, trophies won and medals of all minor and major
+                    competitions.</p>
+            </div>
+            <ul>
+                <li>The first table tennis <a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                              target="_blank">Motswana</a>
+                    to bring home a medal (bronze) at the South African table tennis Annual Regional Championships in
+                    2014.
+                </li>
+                <li>The first <a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                 target="_blank">Motswana</a> invited
+                    to African table tennis Top 16 tournament held in Kenya (March 2018).
+                </li>
+            </ul>
+
+            <div class="row no-gutters">
+
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+                    <div class="count-box">
+                        <i class="bi bi-award"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p><strong>National team caps</strong></p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
+                     data-aos-delay="100">
+                    <div class="count-box">
+                        <i class="bi bi-trophy"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="231" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p><strong>Medals and trophies won</strong> locally and internationally</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
+                     data-aos-delay="200">
+                    <div class="count-box">
+                        <i class="bi bi-people"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="101" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p><strong>Appearances</strong> locally</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up"
+                     data-aos-delay="300">
+                    <div class="count-box">
+                        <i class="bi bi-people"></i>
+                        <span data-purecounter-start="0" data-purecounter-end="90" data-purecounter-duration="1"
+                              class="purecounter"></span>
+                        <p><strong>Appearances</strong> internationaly</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Facts Section -->
+
+    <!--    &lt;!&ndash; ======= Skills Section ======= &ndash;&gt;-->
+    <!--    <section id="skills" class="skills section-bg">-->
+    <!--        <div class="container">-->
+
+    <!--            <div class="section-title">-->
+    <!--                <h2>Skills</h2>-->
+    <!--                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint-->
+    <!--                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia-->
+    <!--                    fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+    <!--            </div>-->
+
+    <!--            <div class="row skills-content">-->
+
+    <!--                <div class="col-lg-6" data-aos="fade-up">-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">HTML <i class="val">100%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">CSS <i class="val">90%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">JavaScript <i class="val">75%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                </div>-->
+
+    <!--                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">PHP <i class="val">80%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">WordPress/CMS <i class="val">90%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                    <div class="progress">-->
+    <!--                        <span class="skill">Photoshop <i class="val">55%</i></span>-->
+    <!--                        <div class="progress-bar-wrap">-->
+    <!--                            <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"-->
+    <!--                                 aria-valuemax="100"></div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+
+    <!--                </div>-->
+
+    <!--            </div>-->
+
+    <!--        </div>-->
+    <!--    </section>&lt;!&ndash; End Skills Section &ndash;&gt;-->
+
+    <!-- ======= Medal record ======= -->
+    <section id="resume" class="resume">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Career Statistics</h2>
+                <p align="justify"><a class="mylinks" href="http://www.bnsc.co.bw/node/268" target="-blank">Botswana
+                    Table Tennis Association (BTTA)</a> and
+                    <a class="mylinks" href="https://www.ittf.com/" title="ITTF" target="_blank">Iternational Table
+                        Tennis Federation</a> (ITTF) major tournaments
+                    perfomance highlights.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <!-- <h3 class="resume-title">Sumary</h3> -->
+                    <div class="resume-item pb-0">
+                        <h5>Singles</h5>
+                        <p><strong>Local tournaments</strong></p>
+                                <!-- <button onclick="tournamentSuccesses()">View</button><h6></strong></p>  -->
+                                <label class="switch switch-light">
+                                    <input class="switch-input" type="checkbox" onclick="tournamentSuccesses()"/>
+                                    <span class="switch-label" data-on="view" data-off="close"></span>
+                                    <span class="switch-handle"></span>
+                                </label>
+
+                                <div id="tournamentToggle">
+                                    <ul>
+                                        <li><a class="mylinks" href="http://www.bnsc.co.bw/node/268" target="-blank">Botswana
+                                            Table Tennis Association (BTTA)</a> Open: Winner (2014)
+                                        </li>
+                                        <li><a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                               target="_blank">Botswana</a> Open table tennis tournament: Winner (2014)
+                                        </li>
+                                        <li>Smash Maniacs Open tournament: Runners-up(2014)</li>
+                                        <li>New Horizon Open tournament: Runners-up (2014)</li>
+                                        <li><a class="mylinks" href="https://en.wikipedia.org/wiki/Ghanzi"
+                                               target="_blank">Ghanzi</a> Open tournament: Winner (2015)
+                                        </li>
+                                        <li>Smash Maniacs Open tournament: Runner-up (2015)</li>
+                                        <li><a class="mylinks" href="https://en.wikipedia.org/wiki/Kanye,_Botswana"
+                                               target="_blank">Kanye</a> Open tournament: Runner-up (2015)
+                                        </li>
+                                        <li>Dithubaruba Open tournament: Runner-up (2015)</li>
+                                        <li>Independence Open tournament: Runner-up (2015)</li>
+                                        <li><a class="mylinks" href="http://www.bnsc.co.bw/node/268" target="-blank">
+                                            Botswana Table Tennis Association (BTTA)</a> local top 8 championships:
+                                            Winner (2016)
+                                        </li>
+                                        <li>New Horizon Open tournament: Winner (2016)</li>
+                                        <li><a class="mylinks"
+                                               href="https://en.wikipedia.org/wiki/Botswana_Defence_Force"
+                                               target="_blank">Botswana Defence Force (BDF)</a> Open tournament: Winner
+                                            (2016)
+                                        </li>
+                                        <li>Smash Maniacs Open tournament: Runner-up (2016)</li>
+                                        <li>Nhabe Open tournament: Runner-up (2016)</li>
+                                        <li>National top 16 tournament: Winner (2017)</li>
+                                        <li>New Horizon Open tournament: Winner (2017)</li>
+                                        <li><a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                               target="_blank">Botswana </a>Table Tennis Association (BTTA) Top 16 ~ sponsored by <a class="mylinks"
+                                                                                           href="https://www.phoenixassurancegroup.com/botswana/"
+                                                                                           target="blank">Phoenix
+                                            Assurance</a>: 2nd Position (2021)
+                                        </li>
+                                        <li><a class="mylinks" href="https://en.wikipedia.org/wiki/Botswana"
+                                               target="_blank">Botswana</a> Table Tennis Association (BTTA) Top 16 July invitational tournament: 2nd Position (2021)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <br>
+                                <!-- <p><strong><h6>International tournaments <button onclick="tournamentSuccessesTeamEvents()">View</button><h6></strong></p> -->
+                                <p><strong>International tournaments</strong> </p>
+                                        <label class="switch switch-light">
+                                            <input class="switch-input" type="checkbox"
+                                                   onclick="tournamentSuccessesTeamEvents()"/>
+                                            <span class="switch-label" data-on="view" data-off="close"></span>
+                                            <span class="switch-handle"></span>
+                                        </label>
+
+                                        <!---Internationl toggle-->
+                                        <div id="internationalTournamentToggle">
+                                            <ul>
+                                                <li>Mafikeng Open: Winner (2015)</li>
+                                                <li>Chineese chambers championship: Winner (2014)</li>
+                                                <li><a href="https://en.wikipedia.org/wiki/Zambia" target="_blank">Zambia</a>,
+                                                    Chineese ambassador’s
+                                                    trophy: Winner (2014) . <a
+                                                            href="https://www.fmprc.gov.cn/mfa_eng/wjb_663304/zwjg_665342/zwbd_665378/t1062522.shtml"
+                                                            target="_blank"><i>Read more...</i> </a></li>
+                                                <li><a href="https://en.wikipedia.org/wiki/South_Africa"
+                                                       target="_blank">South African</a> regional championships: Bronze
+                                                    medalist (2014)
+                                                </li>
+                                                <li>Zone VI: Bronze medalist (2014). <a
+                                                        href="http://www.dailynews.gov.bw/news-details.php?nid=8372"
+                                                        target="_blank"><i>Read full story...</i></a></li>
+                                                <li><a href="https://en.wikipedia.org/wiki/Zambia" target="_blank">Zambia</a>,
+                                                    Chineese ambassador’s
+                                                    trophy: Winner (2015)
+                                                </li>
+                                                <li>Four Nations championships: Winner (2015)</li>
+                                                <li>Zone VI: Winner (2015)</li>
+                                                <li><a href="https://en.wikipedia.org/wiki/2015_African_Games"
+                                                       target="_blank">All Africa Games</a>: Finished in top 16 out of
+                                                    64 players in ladies category (2015)
+                                                </li>
+                                                <li><a href="https://en.wikipedia.org/wiki/Soweto" target="_blank">Soweto
+                                                    Open tournament</a>: Runner-up (2016)
+                                                </li>
+                                                <li><a href="https://en.wikipedia.org/wiki/Gauteng" target="_blank">Gauteng
+                                                    Open tournament</a>: Runner-up (2016)
+                                                </li>
+                                                <li><a href="https://en.wikipedia.org/wiki/Oudtshoorn" target="_blank">Oudtshoorn
+                                                    Open tournament</a>: Runner-up (2016)
+                                                </li>
+                                                <li>Senior African championships: Reached last 16 (2016)</li>
+                                                <li>AUSC Region 5 (Zone VI): Quarter finalist (2018)</li>
+                                            </ul>
+                                        </div>
+
+                    </div>
+                    <br>
+                    <br>
+
+                    <div class="resume-item">
+                        <h5>Doubles</h5>
+                        <p><strong>International tournaments</strong></p>
+                                <div id="internationalTournamentsDoublesToggle">
+                                    <ul>
+                                        <li>South African National & Regional Championships: Quarter finalists (2017)
+                                        </li>
+                                        <li>AUSC Region 5 (Zone VI): Silver medalists (2018)</li>
+
+                                    </ul>
+                                </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="resume-item">
+                        <h5>Mixed Doubles</h5>
+                        <p><strong>International tournaments</strong> </p>
+                                <ul>
+                                    <li>South African National & Regional Championships: Bronze medalists (2017)</li>
+                                </ul>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="resume-item">
+                        <h5>Team events</h5>
+                        <p><strong>International tournaments</strong> </p>
+                                <ul>
+                                    <li>AUSC Region 5 (Zone VI): Bronze medalists (2018)</li>
+                                </ul>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="resume-title">Professional Experience</h3>
+                    <div class="resume-item">
+                        <h4>Senior graphic design specialist</h4>
+                        <h5>2019 - Present</h5>
+                        <p><em>Experion, New York, NY </em></p>
+                        <ul>
+                            <li>Lead in the design, development, and implementation of the graphic, layout, and
+                                production communication materials
+                            </li>
+                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of
+                                the project.
+                            </li>
+                            <li>Supervise the assessment of all graphic materials in order to ensure quality and
+                                accuracy of the design
+                            </li>
+                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Graphic design specialist</h4>
+                        <h5>2017 - 2018</h5>
+                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <ul>
+                            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
+                                advertisements).
+                            </li>
+                            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                            <li>Created 4+ design presentations and proposals a month for clients and account managers
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Gallery</h2>
+                <p align="justify">Snapshots of Tshepiso in action from different tournaments she competed in during
+                    her career.</p>
+            </div>
+
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All photos</li>
+                        <li data-filter=".filter-app">International tournaments</li>
+                        <li data-filter=".filter-card">Local tournaments</li>
+                        <li data-filter=".filter-web">Top 16</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap" class="gallery-images">
+                        <img src="assets/img/portfolio/image-2.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/image-2.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Phoenix Insurance Group tournament 2021"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/south-african-championships.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/south-african-championships.jpg"
+                               data-gallery="portfolioGallery" class="portfolio-lightbox"
+                               title="South African Table Tennis Championships 2020"><i class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/2015-african-games.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/2015-african-games.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="African Games 2015"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="assets/img/portfolio/2015-african-games.png" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="South African Table Tennis Championships 2020"><i
+                                    class="bx bx-plus"></i></a> -->
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/photo-4.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/photo-4.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="SA Championships"><i class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/image-1.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/image-1.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Phoenix Assurance Top 16 2021"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/photo-6.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/photo-6.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Tshepiso Rebatenne, ITTF Africa"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/top_rank.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/top_rank.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox"
+                               title="Rebatenne ranked No.1 in preparation for Lesotho tournament, 2019"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/daily-news.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/daily-news.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Tshepiso competing at BTAA tournament"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/s-a.png" class="img-fluid" alt="">
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/s-a.png" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox" title="Preparation for ITTF Africa Top 16, 2018"><i
+                                    class="bx bx-plus"></i></a>
+                            <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!--    <section id="services" class="services">-->
+    <!--        <div class="container">-->
+
+    <!--            <div class="section-title">-->
+    <!--                <h2>Services</h2>-->
+    <!--                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint-->
+    <!--                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia-->
+    <!--                    fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+    <!--            </div>-->
+
+    <!--            <div class="row">-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">-->
+    <!--                    <div class="icon"><i class="bi bi-briefcase"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>-->
+    <!--                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi-->
+    <!--                        sint occaecati cupiditate non provident</p>-->
+    <!--                </div>-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">-->
+    <!--                    <div class="icon"><i class="bi bi-card-checklist"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Dolor Sitema</a></h4>-->
+    <!--                    <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea-->
+    <!--                        commodo consequat tarad limino ata</p>-->
+    <!--                </div>-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">-->
+    <!--                    <div class="icon"><i class="bi bi-bar-chart"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>-->
+    <!--                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore-->
+    <!--                        eu fugiat nulla pariatur</p>-->
+    <!--                </div>-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">-->
+    <!--                    <div class="icon"><i class="bi bi-binoculars"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Magni Dolores</a></h4>-->
+    <!--                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia-->
+    <!--                        deserunt mollit anim id est laborum</p>-->
+    <!--                </div>-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">-->
+    <!--                    <div class="icon"><i class="bi bi-brightness-high"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Nemo Enim</a></h4>-->
+    <!--                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis-->
+    <!--                        praesentium voluptatum deleniti atque</p>-->
+    <!--                </div>-->
+    <!--                <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">-->
+    <!--                    <div class="icon"><i class="bi bi-calendar4-week"></i></div>-->
+    <!--                    <h4 class="title"><a href="">Eiusmod Tempor</a></h4>-->
+    <!--                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore,-->
+    <!--                        cum soluta nobis est eligendi</p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+
+    <!--        </div>-->
+    <!--    </section>&lt;!&ndash; End Services Section &ndash;&gt;-->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="sources" class="testimonials section-bg">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Articles</h2>
+                <p align="justify">These are external links, reference links, and different articles from different
+                    newspapers about Tshepiso Magdeline
+                    Rebatenne's table tennis journey.
+                </p>
+            </div>
+
+            <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Table Tennis Team Fires Blanks At SA Championships. <a class="mylinks"
+                                                                                       href="https://www.mmegi.bw/index.php?aid=88201&dir=2020/december/21"
+                                                                                       target="_blank">Read more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/mmegi-online.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://www.mmegi.bw/" target="_blank">Mmegi Online</a>
+                            </h3>
+                            <!-- <h4>Article &amp; Bokang</h4> -->
+                            <h4>Article author; Kabelo Boranabi</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Rebatenne bags record P31,000 after win. <a class="mylinks"
+                                                                            href="https://www.mmegi.bw/index.php?aid=87218&dir=2020/october/02"
+                                                                            target="_blank">Read more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/mmegi-online.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://www.mmegi.bw/" target="_blank">Mmegi Online</a>
+                            </h3>
+                            <h4>Article author; Kabelo Boranabi</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Table tennis targets gold at SA champs. <a class="mylinks"
+                                                                           href="https://www.mmegi.bw/index.php?aid=88163&dir=2020/december/18"
+                                                                           target="_blank">Read more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/mmegi-online.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://www.mmegi.bw/" target="_blank">Mmegi Online</a>
+                            </h3>
+                            <h4>Article author; Kabelo Boranabi</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Tshepiso Rebatenne wins Phoenix P25 000 life changing award. <a class="mylinks"
+                                                                                                href="https://sportsnation.co.bw/tshepiso-rebatenne-p25-000-life-changing-award/"
+                                                                                                target="_blank">Read
+                                more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/sports-nation.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://sportsnation.co.bw/" target="_blank">Sports
+                                Nation</a></h3>
+                            <h4>Article author; Kabelo Seleka</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Tough outing for table tennis. <a class="mylinks"
+                                                                  href="https://news.thevoicebw.com/2020/12/tough-outing-for-table-tennis/">Read
+                                more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/the-voice.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://news.thevoicebw.com/" target="_blank">The
+                                Voice</a></h3>
+                            <h4>Article author; Tshepo Kehemile</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                BTTA tourney successful. <a class="mylinks"
+                                                            href="http://www.dailynews.gov.bw/news-details.php?nid=58761/">Read
+                                more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/daily-news.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="http://www.dailynews.gov.bw/" target="_blank">Daily
+                                News</a></h3>
+                            <h4>Article author; Thato Modiakgotla</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Table tennis national team in South Africa. <a class="mylinks"
+                                                                               href="http://www.dailynews.gov.bw/news-details.php?nid=60232">Read
+                                more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/daily-news.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="http://www.dailynews.gov.bw/" target="_blank">Daily
+                                News</a></h3>
+                            <h4>Article author; Anastacia Sibanda</h4>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                            <p>
+                                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                Maloka, Rebatenne bag ping pong season. <a class="mylinks"
+                                                                           href="https://www.pressreader.com/botswana/the-monitor-4753/20210301/281900185940108"
+                                                                           target="_blank">Read more...</a>
+                                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                            </p>
+                            <img src="assets/img/testimonials/the-monitor.png" class="testimonial-img" alt="">
+                            <h3>Source: <a class="mylinks" href="https://www.mmegi.bw//" target="_blank">The Monitor</a>
+                            </h3>
+                            <h4>Article author; Kabelo Boranabi</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+        <!--    </section>&lt;!&ndash; End Testimonials Section &ndash;&gt;-->
+
+        <!-- ======= Contact Section ======= -->
+        <!--    <section id="contact" class="contact">-->
+        <!--        <div class="container">-->
+
+        <!--            <div class="section-title">-->
+        <!--                <h2>Contact</h2>-->
+        <!--                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint-->
+        <!--                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia-->
+        <!--                    fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+        <!--            </div>-->
+
+        <!--            <div class="row" data-aos="fade-in">-->
+
+        <!--                <div class="col-lg-5 d-flex align-items-stretch">-->
+        <!--                    <div class="info">-->
+        <!--                        <div class="address">-->
+        <!--                            <i class="bi bi-geo-alt"></i>-->
+        <!--                            <h4>Location:</h4>-->
+        <!--                            <p>A108 Adam Street, New York, NY 535022</p>-->
+        <!--                        </div>-->
+
+        <!--                        <div class="email">-->
+        <!--                            <i class="bi bi-envelope"></i>-->
+        <!--                            <h4>Email:</h4>-->
+        <!--                            <p>info@example.com</p>-->
+        <!--                        </div>-->
+
+        <!--                        <div class="phone">-->
+        <!--                            <i class="bi bi-phone"></i>-->
+        <!--                            <h4>Call:</h4>-->
+        <!--                            <p>+1 5589 55488 55s</p>-->
+        <!--                        </div>-->
+
+        <!--                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"-->
+        <!--                                frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
+        <!--                    </div>-->
+
+        <!--                </div>-->
+
+        <!--                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">-->
+        <!--                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">-->
+        <!--                        <div class="row">-->
+        <!--                            <div class="form-group col-md-6">-->
+        <!--                                <label for="name">Your Name</label>-->
+        <!--                                <input type="text" name="name" class="form-control" id="name" required>-->
+        <!--                            </div>-->
+        <!--                            <div class="form-group col-md-6">-->
+        <!--                                <label for="name">Your Email</label>-->
+        <!--                                <input type="email" class="form-control" name="email" id="email" required>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                        <div class="form-group">-->
+        <!--                            <label for="name">Subject</label>-->
+        <!--                            <input type="text" class="form-control" name="subject" id="subject" required>-->
+        <!--                        </div>-->
+        <!--                        <div class="form-group">-->
+        <!--                            <label for="name">Message</label>-->
+        <!--                            <textarea class="form-control" name="message" rows="10" required></textarea>-->
+        <!--                        </div>-->
+        <!--                        <div class="my-3">-->
+        <!--                            <div class="loading">Loading</div>-->
+        <!--                            <div class="error-message"></div>-->
+        <!--                            <div class="sent-message">Your message has been sent. Thank you!</div>-->
+        <!--                        </div>-->
+        <!--                        <div class="text-center">-->
+        <!--                            <button type="submit">Send Message</button>-->
+        <!--                        </div>-->
+        <!--                    </form>-->
+        <!--                </div>-->
+
+        <!--            </div>-->
+
+        <!--        </div>-->
+        <!--    </section>&lt;!&ndash; End Contact Section &ndash;&gt;-->
+
+</main>
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; 2021 Copyright <strong><span> Bokang Modisagarekwe</span></strong>
+        </div>
+        <div class="credits">
+            Designed by <a href="https://bmodisagarekwe.github.io/" target="_blank">Bokang Modisagarekwe</a>
+        </div>
+    </div>
+</footer><!-- End  Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
